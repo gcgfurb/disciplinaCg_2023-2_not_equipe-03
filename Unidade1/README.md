@@ -1,6 +1,7 @@
 # Atividades 1
 
 [Equipe-03.pdf](Equipe-03.pdf)  
+[Slides](Slides.pdf)  
 
 ## Equipe 3
 
