@@ -74,7 +74,7 @@ namespace gcgcg
 
       Diretivas();
 
-      GL.ClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+      GL.ClearColor(0.00f, 0.00f, 0.80f, 0.8f);
 
       #region Eixos: SRU  
       _vertexBufferObject_sruEixos = GL.GenBuffer();

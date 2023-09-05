@@ -12,6 +12,9 @@ namespace gcgcg
       PrimitivaTipo = PrimitiveType.Points;
       PrimitivaTamanho = 5;
 
+      //Para deixar o circulo amarelo
+      shaderCor = new Shader("Shaders/shader.vert", "Shaders/shaderAmarela.frag");
+
       base.PontosAdicionar(pto);
 
       Atualizar();
