@@ -163,6 +163,21 @@ namespace gcgcg
       ObjetoAtualizar();
     }
 
+    public void PontosRemover(int posicao){
+
+      List<Ponto4D> pontosListaRemover = new List<Ponto4D>();
+
+      for(int i=0; i<this.pontosLista.Count; i++){
+        if(i != posicao){
+          pontosListaRemover.Add(this.pontosLista[i]);
+        }
+      }
+
+      this.pontosLista = pontosListaRemover;
+      ObjetoAtualizar();
+
+    }
+
     #endregion
 
     #region Objeto: Grafo de Cena

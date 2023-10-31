@@ -296,6 +296,21 @@ namespace gcgcg
 
       }
 
+      if(input.IsKeyPressed(Keys.E) && objetoSelecionado != null){
+
+        int janelaLargura = Size.X;
+        int janelaAltura = Size.Y;
+        Ponto4D mousePonto = new Ponto4D(MousePosition.X, MousePosition.Y);
+        Ponto4D sruPonto = Utilitario.NDC_TelaSRU(janelaLargura, janelaAltura, mousePonto);
+
+        for(int i=0; i < poligonosDaTela.Count; i++){
+          if(poligonosDaTela[i] == objetoSelecionado){
+            poligonosDaTela[i].PontosRemover(objetoSelecionado.menorDistancia(sruPonto));
+          }
+          poligonosDaTela[i].ObjetoAtualizar();
+        }
+
+      }
       
       
 
